@@ -43,6 +43,8 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
+            seccompProfile:
+              type: RuntimeDefault
           image: frontend
           ports:
           - containerPort: 8080

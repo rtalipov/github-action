@@ -41,6 +41,8 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
+            seccompProfile:
+              type: RuntimeDefault
           image: checkoutservice
           ports:
           - containerPort: 5050
